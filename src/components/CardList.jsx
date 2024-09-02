@@ -12,11 +12,10 @@ const CardList = () => {
   }, []);
 
   return (
-    <div>
-      <h1>Cards</h1>
-      <ul>
+    <div className="mt-20">
+      <ul className="border">
         {cards.map((card) => (
-          <li key={card.id}>
+          <li className="border" key={card.id}>
             {card.cardholderName} - {card.cardType}
           </li>
         ))}
